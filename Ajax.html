@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Document</title>
+</head>
+<body>
+<p id="demo">Data will load here</p>
+<button onclick="loaddata()">Click me</button>
+<script>
+function loaddata()
+{
+var xhttp=new XMLHttpRequest();
+xhttp.onreadystatechange=function()
+//to check the state .this funtion will automatically execute in each state change
+{
+if(this.readyState==4 && this.status==200)//status==200 means requested file get
+{
+document.getElementById("demo").innerHTML=this.responseText;
+}
+else if(this.readyState==4 && this.status==404)
+{
+document.getElementById("demo").innerHTML="File not found";
+
+}
+}
+//xhttp.open('GET',"C:\Users\mdali\OneDrive\AJAXAli.txt",true);
+xhttp.open('GET','state.txt',true);
+xhttp.send();
+
+}
+</script>
+</body>
+</html>

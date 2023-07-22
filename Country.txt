@@ -1,0 +1,5 @@
+Country                     Capital
+India                       Delhi
+Afganistan                  Kabul
+Bangladesh                  Dhaka
+America                     Califonia

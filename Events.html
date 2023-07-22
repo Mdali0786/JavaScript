@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+Enter your name: <input type="text" id="fname" onblur="st()"> 
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Smiley.svg/1200px-Smiley.svg.png"  width="50" height="50" onmouseover="cc(this)" onmouseout="dd(this)">
+
+<script>
+function st() {
+  var x = document.getElementById("fname");
+  x.value=x.value.toUpperCase();
+
+}
+function cc(a)
+{
+a.style.height="10px";
+a.style.width="10px";
+
+
+}
+function dd(b)
+{
+b.style.height="50px";
+b.style.width="50px";
+}
+</script>
+
+</body>
+</html>

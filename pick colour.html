@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<style>
+.color {
+display: inline-block;
+width: 5em;
+height: 5em;
+margin: 5em;
+border-width: 50%;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+</style>
+</head>
+<body>
+    <div id ="color" class="color" style="background-color: yellow;" ></div>
+    <div id ="color" class="color" style="background-color: red;"></div>
+    <div id ="color" class="color" style="background-color: blue;"></div>
+    <div id ="color" class="color" style="background-color: blueviolet;"></div>
+    <div id ="color" class="color" style="background-color: pink;"></div>
+    <div id ="color" class="color" style="background-color: green;"></div>
+    <div id ="color" class="color" style="background-color: grey;"></div>
+    <div id ="color" class="color" style="background-color: orangered;"></div>
+    <div id ="color" class="color" style="background-color: orange;"></div>
+    <div id ="color" class="color" style="background-color: black;"></div>
+<script>
+const colors = document.querySelectorAll(".color");
+colors.forEach((color) => {
+color.addEventListener("click", () => {
+const colorValue = color.style.backgroundColor;
+console.log(`This color is ${colorValue}`)
+});
+});
+</script>
+</body>
+</html>

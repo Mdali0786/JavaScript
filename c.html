@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<script>
+function check1()
+{
+    var a=document.getElementsByName("gender");
+    if(a[0].checked)
+    {
+        alert(a[0].value);
+    }
+    else
+    {
+        alert(a[1].value);
+    }
+}
+
+
+
+</script>
+    </head>
+    <body>
+        <form>
+            <input type="radio" value="Male" name="gender">Male<br>
+            <input type="radio" value="Female" name="gender">Female<br>
+            <input type="button" value="check" onclick="check1()">
+            
+        </form>
+    </body>
+</html>

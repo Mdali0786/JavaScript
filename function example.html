@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script>
+            function myFunc(theObject) {
+                theObject.make = 'Toyota';
+            }
+            const mycar = {
+                make: 'Honda',
+                model: 'Accord',
+                year: 1998,
+            };
+              // x gets the value "Honda"
+            const x = mycar.make;
+             // the make property is changed by the function
+            myFunc(mycar);
+            // y gets the value "Toyota"
+            const y = mycar.make;
+            function myFunc(theArr) {
+                theArr[0] = 30;
+            }
+            const arr = [45];
+            console.log(arr[0]); // 45
+            myFunc(arr);
+            console.log(arr[0]); // 30
+            
+        </script>
+    </head>
+</html>

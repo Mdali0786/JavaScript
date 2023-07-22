@@ -1,0 +1,23 @@
+<html>
+<head>
+<script language="JavaScript">
+function validate()
+{
+at=myForm.myEmail.value.indexOf("@")
+document.write(at);
+if (at==-1)
+{
+alert("Not a valid e-mail")
+return false
+}
+}
+</script>
+</head>
+<body>
+<form name="myForm" onsubmit="validate()">
+Enter your E-mail address:
+<input type="text" name="myEmail"> 
+<input type="submit" value="Send input"> 
+</form>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>FORMS IN HTML</title>
+</head>
+<body>
+<form>
+<center>
+<table border="1">
+<caption>Student Registration Form</caption>
+<tr>
+<th>Name of the Candidate:</th>
+<td><input name="name" type="text" autofocus required></td>
+</tr>
+</table>
+</center>
+<label>Registration no. of candidate: 
+<input name="address" type="text" pattern="[0-9]{8}"><br>
+<label>Gender
+<input name="gender" type="radio" value="m">Male
+<input name="gender" type="radio" value="f">Female<br>
+<label>Program
+<select>
+<option>BCA</option>
+<option>MCA</option>
+<option>B.Sc-IT</option>
+<option>M.Sc-CSE</option>
+</select>
+<label>Semester
+<select>
+<option>I</option>
+<option>II</option>
+<option>III</option>
+<option>IV</option>
+</select><br>
+<label>Contact
+<input name="employed" type="text" pattern="[0-9]{10}"><br>
+<label>Email
+<input type="email"><br>
+<label>Events to  participate
+<input type="checkbox">Dancing
+<input type="checkbox">Singing
+<input type="checkbox">Drama<br>
+<label>Previous participations/ achievement
+<textarea rows="3" cols="35"></textarea><br>
+<label>Term & Conditions
+<ol>
+<li>I will not ask for duty leaves</li>
+<li>I will attend classes when I am free</li>
+<li>All the expenses would be beared at my own</li>
+</ol>
+<label><input type="Checkbox">I accept terms & conditions<br>
+<input type="submit" value="Register">
+<input type="reset" value="cancel">
+</form>
+</body>
+</html>

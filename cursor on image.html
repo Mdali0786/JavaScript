@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="veiwport" content="width=device-width, initial-scaler=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+        <script>
+        const cursorRounded = document.querySelector('.rounded');
+        const cursorPointed = document.querySelector('.pointed');
+        const moveCursor = (e)=> {
+            const mouseY = e.clientY;
+            const mouseX = e.clientX;
+            cursorRounded.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+            cursorPointed.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+        }
+        window.addEventListener('mousemove', moveCursor);
+    }
+        </script>
+        <body>
+            <div class="cursor rounded"></div>
+            <div class="cursor pointed"><div>
+            </body>
+        </html>

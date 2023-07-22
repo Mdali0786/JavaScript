@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+    <title>Event Delegation</title>
+    
+</head>
+<body>
+    <div clas="catagory">
+   <u1 class="catagory">
+ <li clas="Computer">Computer</li>
+ <li clas="Mouse">Mouse</li>
+ <li clas="Pendrive">Pendrive</li>
+   </u1>
+    </div>
+    <script>
+      document.querySelector(".catagory").addEventListener('click',(e)=>{
+        console.log(e.target)
+      });
+    </script>
+</body>
+</html>

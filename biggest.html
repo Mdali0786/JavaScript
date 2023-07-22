@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <script>
+    const largest = (a, b) => a > b ? a : b;
+    console.log(largest(10, 20));
+    const largest = (arr) => {
+      let max = Number.MIN_SAFE_INTEGER;
+      for(let val of arr){
+        if(val > max){
+          max = val;
+        }
+      }
+      return val;
+    }
+    console.log(largest([10, 20, 30, 40, 50]));
+    const arr = [10, 20, 30, 40, 50];
+    cont max = Math.max(...arr);
+    console.log(max);
+    </script>
+  </head>
+</html>
+
+  
+ 

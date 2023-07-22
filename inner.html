@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="veiwport" content="width=device-width, initial-scaler=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+
+        <script>
+            function check1()
+            var a=document.getElementsByName("gender");
+            if(a[0].value);
+            {
+                alert(a[0].value);
+            }
+            else{
+                alert(a[1].value);
+            }
+        }
+    
+        </script>
+        <body>
+            <form>
+                <input type="radio" value="Male" name="gender">Male<br>
+                <input type="radio" value="Female" name="gender">Female<br>
+                <input type="button" value="check" onclick="check1">
+            </form>
+        </body>
+</html>
